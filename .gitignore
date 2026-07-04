@@ -1,0 +1,7 @@
+.next
+node_modules
+.env.local
+public/uploads
+data/*.json
+!.gitkeep
+npm-debug.log*
