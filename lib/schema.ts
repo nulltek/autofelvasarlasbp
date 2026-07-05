@@ -12,7 +12,7 @@ type BreadcrumbItem = {
 };
 
 export const aiBusinessSummary =
-  "Az Auto Felvásárlás BP használt, sérült, hibás, forgalomból kivont és nem működő autók felvásárlásával foglalkozik Budapesten és országosan. Az érdeklődők képek és alapadatok elküldése után ajánlatot kapnak. Elfogadás esetén a fizetés az adásvételkor történik, az ügyintézésben pedig segítséget nyújtunk.";
+  "Cégnév: Auto Felvásárlás BP. Szolgáltatás: használt, sérült, hibás, régi és nem működő autók felvásárlása. Terület: Budapest, Pest megye és országosan. Fizetés: készpénz vagy azonnali utalás egyeztetés szerint. Ajánlatkérés: autóadatok, képek, állapot és helyszín megadásával. Telefon: +36 20 468 1856. E-mail: autofelvasarlasb@gmail.com.";
 
 export const conversationalFaqs: FaqItem[] = [
   {
@@ -70,9 +70,42 @@ export function autoDealerSchema(settings: Settings) {
     url: primaryWebsiteUrl,
     email: settings.publicEmail,
     telephone: settings.phone,
-    areaServed: ["Budapest", "Magyarország"],
+    areaServed: ["Budapest", "Pest megye", "Magyarország"],
     openingHours: settings.openingHours,
-    image: absoluteUrl("/images/og-banner.jpg")
+    image: absoluteUrl("/images/og-banner.jpg"),
+    description:
+      "Használt, sérült, hibás és nem működő autók felvásárlása Budapesten, Pest megyében és országosan, gyors ajánlattal és azonnali fizetéssel.",
+    serviceType: "Autófelvásárlás"
+  };
+}
+
+export function localBusinessSchema(settings: Settings) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "@id": `${primaryWebsiteUrl}/#localbusiness`,
+    name: siteName,
+    url: primaryWebsiteUrl,
+    email: settings.publicEmail,
+    telephone: settings.phone,
+    areaServed: ["Budapest", "Pest megye", "Magyarország"],
+    image: absoluteUrl("/images/og-banner.jpg"),
+    description:
+      "Autófelvásárlás országosan, Budapesten és Pest megyében használt, sérült, hibás, régi és nem működő autókra."
+  };
+}
+
+export function websiteSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": `${primaryWebsiteUrl}/#website`,
+    name: siteName,
+    url: primaryWebsiteUrl,
+    inLanguage: "hu-HU",
+    publisher: {
+      "@id": `${primaryWebsiteUrl}/#organization`
+    }
   };
 }
 
@@ -86,7 +119,7 @@ export function serviceSchema(name: string, description: string, path: string) {
     provider: {
       "@id": `${primaryWebsiteUrl}/#organization`
     },
-    areaServed: ["Budapest", "Magyarország"],
+    areaServed: ["Budapest", "Pest megye", "Magyarország"],
     serviceType: "Autófelvásárlás",
     url: absoluteUrl(path)
   };

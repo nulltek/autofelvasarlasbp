@@ -11,16 +11,18 @@ import {
   breadcrumbSchema,
   conversationalFaqs,
   faqPageSchema,
+  localBusinessSchema,
   organizationSchema,
-  serviceSchema
+  serviceSchema,
+  websiteSchema
 } from "@/lib/schema";
 import { serviceLinks } from "@/lib/site";
 
 export const metadata = pageMetadata({
-  title: "Autófelvásárlás Budapest | Gyors ajánlat, azonnali fizetés",
+  title: "Autófelvásárlás országosan és Budapesten | Gyors ajánlat, azonnali fizetés",
   path: "/",
   description:
-    "Használt, sérült vagy hibás autó eladása Budapesten? Gyors ajánlat, korrekt ügyintézés, azonnali fizetés és országos kiszállás."
+    "Autófelvásárlás országosan gyors ajánlattal, korrekt áron, azonnali fizetéssel. Használt, sérült, hibás és nem működő autók felvásárlása."
 });
 
 const processSteps = [
@@ -31,10 +33,30 @@ const processSteps = [
 ];
 
 const acceptedCars = [
-  "használt és régebbi személyautók",
-  "sérült, törött vagy javításra szoruló autók",
-  "hibás, nem induló vagy nem működő autók",
-  "forgalomból kivont, lejárt műszakis vagy nem használt járművek"
+  {
+    title: "Használt autók",
+    text: "Használt autó felvásárlás jó áron akkor is kérhető, ha az autó régebbi, sokat futott vagy már nem felel meg a napi használati igényeknek. A pontos állapot, kilométeróra-állás és képek segítenek a reális ajánlatban."
+  },
+  {
+    title: "Régi autók",
+    text: "Régi autók esetén is fogadunk ajánlatkérést, különösen akkor, ha a tulajdonos nem szeretne tovább költeni javításra, vizsgáztatásra vagy fenntartásra. A dokumentumok megléte fontos az adásvételhez."
+  },
+  {
+    title: "Sérült és törött autók",
+    text: "Sérült autó felvásárlás országosan is egyeztethető, ha a sérülések képeken és leírásban láthatók. Törött, karosszériasérült vagy balesetes autóknál az átvétel módját előre egyeztetjük."
+  },
+  {
+    title: "Hibás és motorhibás autók",
+    text: "Hibás autó felvásárlás országosan is kérhető motorhiba, váltóhiba, elektronikai hiba vagy nem induló állapot esetén. A hibajelenség pontos leírása gyorsítja az ajánlatadást."
+  },
+  {
+    title: "Lejárt műszakis és forgalomból kivont autók",
+    text: "Lejárt műszakis, forgalomból kivont vagy régóta álló autókra is kérhető ajánlat. Ilyenkor különösen fontos megadni, hogy az autó mozgatható-e és milyen papírok állnak rendelkezésre."
+  },
+  {
+    title: "Magánszemélytől és cégtől eladó autók",
+    text: "Magánszemélytől eladó autók és céges vagy flottaautók esetén is lehet ajánlatot kérni. Céges járműnél az adásvételhez szükséges jogosultságokat és dokumentumokat előre érdemes tisztázni."
+  }
 ];
 
 export default async function HomePage() {
@@ -42,8 +64,10 @@ export default async function HomePage() {
   const schema = [
     organizationSchema(settings),
     autoDealerSchema(settings),
+    localBusinessSchema(settings),
+    websiteSchema(),
     serviceSchema(
-      "Autófelvásárlás Budapest",
+      "Autófelvásárlás országosan és Budapesten",
       "Használt, sérült, hibás, forgalomból kivont és nem működő autók felvásárlása Budapesten és országosan.",
       "/"
     ),
@@ -57,11 +81,12 @@ export default async function HomePage() {
       <section className="hero-section">
         <div className="shell hero-grid">
           <div className="hero-copy">
-            <p className="eyebrow">Autófelvásárlás Budapest</p>
-            <h1>Autófelvásárlás Budapest – gyors ajánlat, azonnali fizetés</h1>
+            <p className="eyebrow">Autófelvásárlás országosan</p>
+            <h1>Autófelvásárlás országosan és Budapesten – gyors ajánlat, korrekt ár, azonnali fizetés</h1>
             <p className="lead">
-              Használt, sérült, régi, nem működő vagy már nem kívánt autóját szeretné eladni Budapesten vagy az ország
-              más részén? Küldje el az autó alapadatait és képeit, mi pedig visszajelzünk egy korrekt ajánlattal.
+              Használt, sérült, hibás vagy nem működő autó felvásárlása országosan, gyors ügyintézéssel. Küldje el az
+              autó adatait és képeit, mi pedig korrekt ajánlatot adunk. Elfogadás esetén azonnali fizetés, adásvételi
+              szerződés és egyeztetett átvétel.
             </p>
             <div className="button-row">
               <Link className="gold-button" href="/ajanlatkeres">
@@ -151,10 +176,12 @@ export default async function HomePage() {
               ellenőrizhetetlen ígéreteket, hanem az autó valós állapota, dokumentumai és helyszíne alapján egyeztetünk.
             </p>
             <ul className="check-list">
-              <li>Gyors ajánlatkérés képek és alapadatok alapján.</li>
-              <li>Azonnali fizetés elfogadott ajánlat és adásvétel esetén.</li>
-              <li>Segítség a papírmunkában és az átvétel megszervezésében.</li>
-              <li>Budapesti és országos autófelvásárlási lehetőség.</li>
+              <li>Országos autófelvásárlás egyeztetett átvétellel.</li>
+              <li>Gyors ajánlat képek és alapadatok alapján.</li>
+              <li>Azonnali fizetés készpénzben vagy utalással.</li>
+              <li>Hivatalos adásvételi szerződés.</li>
+              <li>Sérült, hibás, régi és nem működő autókra is kérhető ajánlat.</li>
+              <li>Segítség az ügyintézésben és az elszállítás megszervezésében.</li>
             </ul>
           </section>
 
@@ -162,13 +189,32 @@ export default async function HomePage() {
             <h2>Milyen autókat veszünk át?</h2>
             <div className="accepted-grid">
               {acceptedCars.map((item) => (
-                <span key={item}>
+                <article key={item.title}>
                   <CheckCircle2 size={18} />
-                  {item}
-                </span>
+                  <div>
+                    <h3>{item.title}</h3>
+                    <p>{item.text}</p>
+                  </div>
+                </article>
               ))}
             </div>
           </section>
+        </div>
+      </section>
+
+      <section className="shell section-block">
+        <div className="content-panel">
+          <h2>Autófelvásárlás országosan – gyorsan, korrekt áron</h2>
+          <p>
+            Országos autófelvásárlási lehetőséget biztosítunk azoknak, akik gyorsan és egyszerűen szeretnék eladni
+            használt, sérült, hibás vagy már nem használt autójukat. Az ajánlatkéréshez elegendő elküldeni az autó
+            alapadatait, futásteljesítményét, állapotát, helyszínét és néhány képet.
+          </p>
+          <p>
+            Ez alapján korrekt ajánlatot adunk, elfogadás esetén pedig egyeztetjük az adásvétel, fizetés és átvétel
+            részleteit. A szolgáltatás használható gyors autófelvásárlás, autó eladás gyorsan, autófelvásárlás azonnali
+            fizetéssel és használtautó felvásárlás készpénzért keresési szándék esetén is.
+          </p>
         </div>
       </section>
 

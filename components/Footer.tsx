@@ -25,7 +25,7 @@ export function Footer({ settings }: FooterProps) {
           ))}
           <Link href="/ajanlatkeres">Ajánlatkérés</Link>
           <Link href="/autofelvasarlas-orszagosan">Országos autófelvásárlás</Link>
-          {serviceLinks.slice(0, 4).map((item) => (
+          {serviceLinks.map((item) => (
             <Link key={item.href} href={item.href}>
               {item.label}
             </Link>

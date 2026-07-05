@@ -500,6 +500,120 @@ export const servicePages: ServicePage[] = [
       }
     ],
     related: ["/serult-auto-felvasarlas", "/roncsauto-felvasarlas", "/autofelvasarlas-orszagosan"]
+  },
+  {
+    slug: "hibas-auto-felvasarlas",
+    path: "/hibas-auto-felvasarlas",
+    title: "Hibás autó felvásárlás országosan | Gyors ajánlat és fizetés",
+    description:
+      "Hibás autó felvásárlás Budapesten, Pest megyében és országosan. Ajánlat motorhibás, váltóhibás, nem induló vagy javításra szoruló autókra.",
+    h1: "Hibás autó felvásárlás",
+    serviceName: "Hibás autó felvásárlás",
+    lead:
+      "Hibás autót magánúton eladni gyakran nehéz, mert a vevők tartanak a javítási költségektől és a rejtett problémáktól. Az Auto Felvásárlás BP hibás, nem induló, motorhibás, váltóhibás és javításra szoruló autókra is fogad ajánlatkérést Budapesten, Pest megyében és országosan.",
+    sections: [
+      {
+        title: "Hibás autó felvásárlás országosan",
+        paragraphs: [
+          "Hibás autó felvásárlás országosan akkor lehet praktikus megoldás, ha az autó javítása már bizonytalan vagy aránytalanul drága lenne. Ilyen lehet a motorhiba, váltóhiba, elektronikai probléma, nem induló állapot, lejárt műszaki vagy régóta álló jármű.",
+          "Az ajánlatkéréshez érdemes megadni a pontos hibajelenséget, a helyszínt, az autó mozgathatóságát, a futott kilométert, az évjáratot és néhány képet. Minél pontosabb az első leírás, annál gyorsabb az egyeztetés."
+        ]
+      },
+      {
+        title: "Nem induló és javításra szoruló autók",
+        paragraphs: [
+          "Nem induló autó esetén a szállítás és hozzáférhetőség fontos kérdés. Más feltételekkel vehető át egy utcán álló autó, mint egy mélygarázsban vagy udvarban lévő jármű.",
+          "A javításra szoruló autóknál nem szükséges eltitkolni a hibákat. A korrekt ajánlat alapja az ismert probléma és a dokumentumok pontos bemutatása."
+        ]
+      },
+      {
+        title: "Fizetés és adásvétel hibás autónál",
+        paragraphs: [
+          "Elfogadott ajánlat esetén a fizetés az adásvételkor történik, készpénzben vagy egyeztetés szerinti azonnali utalással. Az adásvételi szerződés és a papírok rendezése a folyamat része.",
+          "Ha a forgalmi, törzskönyv, kulcs vagy tulajdonosi helyzet nem egyértelmű, azt előre jelezni kell."
+        ]
+      }
+    ],
+    faqs: [
+      {
+        question: "Milyen hibás autóra kérhetek ajánlatot?",
+        answer:
+          "Motorhibás, váltóhibás, elektronikahibás, nem induló, lejárt műszakis vagy javításra szoruló autóra is kérhető ajánlat."
+      },
+      {
+        question: "El kell indítanom az autót az átvételhez?",
+        answer:
+          "Nem feltétlenül. Ha az autó nem indul, ezt előre jelezze, hogy az átvétel és szállítás egyeztethető legyen."
+      },
+      {
+        question: "Országosan is vásároltok hibás autót?",
+        answer:
+          "Igen, Budapest, Pest megye és országos helyszínek esetén is lehet ajánlatot kérni."
+      },
+      {
+        question: "Mikor történik a fizetés?",
+        answer:
+          "Elfogadott ajánlat esetén a fizetés az adásvételkor történik, készpénzben vagy egyeztetés szerint azonnali utalással."
+      }
+    ],
+    related: ["/motorhibas-auto-felvasarlas", "/serult-auto-felvasarlas", "/autofelvasarlas-orszagosan"]
+  },
+  {
+    slug: "autofelvasarlas-pest-megye",
+    path: "/autofelvasarlas-pest-megye",
+    title: "Autófelvásárlás Pest megye | Használt és hibás autók átvétele",
+    description:
+      "Autófelvásárlás Pest megyében gyors ajánlattal, egyeztetett átvétellel és azonnali fizetéssel használt, sérült vagy hibás autókra.",
+    h1: "Autófelvásárlás Pest megye",
+    serviceName: "Autófelvásárlás Pest megye",
+    lead:
+      "Pest megyében sok autótulajdonos szeretne gyorsan, hirdetés nélkül túladni használt, hibás, sérült vagy nem működő autóján. Ajánlatkéréshez elegendő elküldeni az autó adatait, képeit, állapotát és pontos helyszínét.",
+    sections: [
+      {
+        title: "Használt autó felvásárlás Pest megyében",
+        paragraphs: [
+          "Pest megye településeiről, agglomerációs városokból és kisebb falvakból is lehet ajánlatot kérni. A helyszín azért fontos, mert az átvétel, szállítás és időpont-egyeztetés így tervezhető.",
+          "Használt autó, régi autó, sokat futott jármű, sérült vagy hibás autó esetén is érdemes képeket és pontos állapotleírást küldeni."
+        ]
+      },
+      {
+        title: "Sérült és hibás autó felvásárlás Pest megyében",
+        paragraphs: [
+          "Sérült, törött, motorhibás, váltóhibás vagy nem induló autóra is kérhető ajánlat Pest megyében. Ilyenkor a szállítási feltételeket előre egyeztetjük.",
+          "A gyors egyeztetéshez fontos tudni, hogy az autó mozgatható-e, hol áll, és milyen dokumentumok állnak rendelkezésre."
+        ]
+      },
+      {
+        title: "Azonnali fizetés és egyeztetett átvétel",
+        paragraphs: [
+          "Elfogadott ajánlat esetén az adásvételkor történik a fizetés, készpénzben vagy egyeztetés szerinti azonnali utalással. Az átvétel időpontját és módját előre egyeztetjük.",
+          "A folyamat célja, hogy az autó eladása Pest megyében is átlátható, gyors és rendezett legyen."
+        ]
+      }
+    ],
+    faqs: [
+      {
+        question: "Pest megye mely településeiről lehet ajánlatot kérni?",
+        answer:
+          "Pest megye teljes területéről fogadunk megkeresést. A pontos települést és címet ajánlatkéréskor érdemes megadni."
+      },
+      {
+        question: "Hibás autót is átvesztek Pest megyében?",
+        answer:
+          "Igen, hibás, sérült, motorhibás vagy nem induló autóra is kérhető ajánlat."
+      },
+      {
+        question: "Kell képet küldeni az autóról?",
+        answer:
+          "Igen, a képek segítenek a gyorsabb és pontosabb ajánlatadásban."
+      },
+      {
+        question: "Mikor fizettek?",
+        answer:
+          "Elfogadott ajánlat esetén a fizetés az adásvételkor történik."
+      }
+    ],
+    related: ["/autofelvasarlas-orszagosan", "/autofelvasarlas-budapest", "/hibas-auto-felvasarlas"]
   }
 ];
 

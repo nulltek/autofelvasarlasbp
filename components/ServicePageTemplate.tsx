@@ -9,8 +9,10 @@ import {
   autoDealerSchema,
   breadcrumbSchema,
   faqPageSchema,
+  localBusinessSchema,
   organizationSchema,
-  serviceSchema
+  serviceSchema,
+  websiteSchema
 } from "@/lib/schema";
 import { JsonLd } from "@/components/JsonLd";
 
@@ -23,6 +25,8 @@ export function ServicePageTemplate({ page, settings }: ServicePageTemplateProps
   const schema = [
     organizationSchema(settings),
     autoDealerSchema(settings),
+    localBusinessSchema(settings),
+    websiteSchema(),
     serviceSchema(page.serviceName, page.description, page.path),
     faqPageSchema(page.faqs, page.path),
     breadcrumbSchema([
@@ -80,8 +84,10 @@ export function ServicePageTemplate({ page, settings }: ServicePageTemplateProps
             ajánlatkérést autó eladására.
           </p>
           <div className="internal-link-grid">
-            <Link href="/">autófelvásárlás Budapesten</Link>
+            <Link href="/autofelvasarlas-orszagosan">autófelvásárlás országosan</Link>
             <Link href="/ajanlatkeres">ajánlatkérés autó eladására</Link>
+            <Link href="/kapcsolat">kapcsolat</Link>
+            <Link href="/autofelvasarlas-budapest">autófelvásárlás Budapesten</Link>
             {page.related.map((href) => (
               <Link href={href} key={href}>
                 {serviceLinkLabel(href)}

@@ -35,8 +35,10 @@ export const navItems = [
 export const serviceLinks = [
   { href: "/autofelvasarlas-budapest", label: "autófelvásárlás Budapesten" },
   { href: "/autofelvasarlas-orszagosan", label: "autófelvásárlás országosan" },
+  { href: "/autofelvasarlas-pest-megye", label: "autófelvásárlás Pest megyében" },
   { href: "/hasznaltauto-felvasarlas", label: "használtautó felvásárlás" },
   { href: "/serult-auto-felvasarlas", label: "sérült autó felvásárlása" },
+  { href: "/hibas-auto-felvasarlas", label: "hibás autó felvásárlás" },
   { href: "/motorhibas-auto-felvasarlas", label: "motorhibás autó felvásárlás" },
   { href: "/roncsauto-felvasarlas", label: "roncsautó felvásárlás" },
   { href: "/keszpenzes-autofelvasarlas", label: "készpénzes autófelvásárlás" }
@@ -52,12 +54,24 @@ export const routes = [
   "/uzenet-elkuldve",
   "/autofelvasarlas-budapest",
   "/autofelvasarlas-orszagosan",
+  "/autofelvasarlas-pest-megye",
   "/hasznaltauto-felvasarlas",
   "/serult-auto-felvasarlas",
+  "/hibas-auto-felvasarlas",
   "/motorhibas-auto-felvasarlas",
   "/roncsauto-felvasarlas",
   "/keszpenzes-autofelvasarlas",
   "/tanacsok/hogyan-adjam-el-az-autom-gyorsan",
   "/tanacsok/serult-auto-eladasa",
-  "/tanacsok/keszpenzes-autofelvasarlas-menete"
+  "/tanacsok/keszpenzes-autofelvasarlas-menete",
+  "/llms.txt",
+  "/autofelvasarlas-budapest-11-kerulet",
+  "/autofelvasarlas-budapest-13-kerulet",
+  "/autofelvasarlas-budapest-18-kerulet",
+  "/autofelvasarlas-debrecen",
+  "/autofelvasarlas-szeged",
+  "/autofelvasarlas-gyor",
+  "/autofelvasarlas-miskolc",
+  "/autofelvasarlas-pecs",
+  "/autofelvasarlas-nyiregyhaza"
 ];
