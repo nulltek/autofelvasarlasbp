@@ -42,6 +42,12 @@ export function Footer({ settings }: FooterProps) {
           </a>
         </div>
       </div>
+      <div className="footer-credit">
+        <span>Webdesign by</span>
+        <a href="https://nulltek.hu" target="_blank" rel="noreferrer">
+          NullTek
+        </a>
+      </div>
     </footer>
   );
 }
