@@ -6,10 +6,6 @@ export const siteDescription =
   "Használt autó felvásárlás országos lefedettséggel, korrekt ajánlattal és gyors ügyintézéssel.";
 
 export const defaultSettings: Settings = {
-  operatorName: "Autófelvásárlás - üzemeltető neve feltöltendő",
-  operatorAddress: "Székhely feltöltendő",
-  operatorTaxNumber: "Adószám feltöltendő",
-  operatorRegistryNumber: "Cégjegyzékszám / nyilvántartási szám feltöltendő",
   businessEmail: "autofelvasarlasb@gmail.com",
   publicEmail: "autofelvasarlasb@gmail.com",
   phone: "+36 20 468 1856",
@@ -42,8 +38,5 @@ export const routes = [
   "/gyik",
   "/ajanlatkeres",
   "/ajanlatkeres/koszonjuk",
-  "/uzenet-elkuldve",
-  "/aszf",
-  "/adatvedelem",
-  "/gdpr"
+  "/uzenet-elkuldve"
 ];

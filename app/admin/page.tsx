@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { Lock, LogOut, Mail, Save, Trash2 } from "lucide-react";
 import { isAdminAuthenticated } from "@/lib/auth";
 import { getContactMessages, getFaqs, getInquiries, getSettings } from "@/lib/db";
@@ -90,22 +90,6 @@ export default async function AdminPage({ searchParams }: AdminPageProps) {
       <section className="admin-section">
         <h2>Kapcsolati és e-mail beállítások</h2>
         <form action={updateSettings} className="admin-form settings-form">
-          <label>
-            Üzemeltető neve
-            <input name="operatorName" defaultValue={settings.operatorName} required />
-          </label>
-          <label>
-            Székhely / cím
-            <input name="operatorAddress" defaultValue={settings.operatorAddress} required />
-          </label>
-          <label>
-            Adószám
-            <input name="operatorTaxNumber" defaultValue={settings.operatorTaxNumber} required />
-          </label>
-          <label>
-            Cégjegyzékszám / nyilvántartási szám
-            <input name="operatorRegistryNumber" defaultValue={settings.operatorRegistryNumber} required />
-          </label>
           <label>
             Üzleti e-mail cím
             <input name="businessEmail" type="email" defaultValue={settings.businessEmail} required />

@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 import { Mail, Phone } from "lucide-react";
 import type { Settings } from "@/lib/types";
 import { mailHref, telHref } from "@/lib/format";
@@ -16,19 +16,16 @@ export function Footer({ settings }: FooterProps) {
         <div>
           <Logo />
           <p>
-            Használt autó felvásárlás gyors ügyintézéssel, országos lefedettséggel és korrekt ajánlattal.
+            HasznĂˇlt autĂł felvĂˇsĂˇrlĂˇs gyors ĂĽgyintĂ©zĂ©ssel, orszĂˇgos lefedettsĂ©ggel Ă©s korrekt ajĂˇnlattal.
           </p>
         </div>
-        <nav aria-label="Lábléc navigáció">
+        <nav aria-label="LĂˇblĂ©c navigĂˇciĂł">
           {navItems.map((item) => (
             <Link key={item.href} href={item.href}>
               {item.label}
             </Link>
           ))}
-          <Link href="/ajanlatkeres">Ajánlatkérés</Link>
-          <Link href="/aszf">ÁSZF</Link>
-          <Link href="/adatvedelem">Adatvédelem</Link>
-          <Link href="/gdpr">GDPR</Link>
+          <Link href="/ajanlatkeres">AjĂˇnlatkĂ©rĂ©s</Link>
         </nav>
         <div className="footer-contact">
           <a href={telHref(settings.phone)}>

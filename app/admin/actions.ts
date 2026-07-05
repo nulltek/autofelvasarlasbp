@@ -43,10 +43,6 @@ export async function updateSettings(formData: FormData) {
   if (!(await isAdminAuthenticated())) redirect(adminPathWithError("session"));
 
   const settings: Settings = {
-    operatorName: value(formData, "operatorName"),
-    operatorAddress: value(formData, "operatorAddress"),
-    operatorTaxNumber: value(formData, "operatorTaxNumber"),
-    operatorRegistryNumber: value(formData, "operatorRegistryNumber"),
     businessEmail: value(formData, "businessEmail"),
     publicEmail: value(formData, "publicEmail"),
     phone: value(formData, "phone"),

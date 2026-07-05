@@ -6,10 +6,6 @@ export type Faq = {
 };
 
 export type Settings = {
-  operatorName: string;
-  operatorAddress: string;
-  operatorTaxNumber: string;
-  operatorRegistryNumber: string;
   businessEmail: string;
   publicEmail: string;
   phone: string;

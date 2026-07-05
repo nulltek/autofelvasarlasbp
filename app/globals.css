@@ -457,45 +457,6 @@ h1 span,
   color: var(--muted);
 }
 
-.legal-page {
-  max-width: 980px;
-}
-
-.legal-content {
-  display: grid;
-  gap: 12px;
-}
-
-.legal-content h2 {
-  margin: 22px 0 0;
-  color: var(--text);
-  font-size: clamp(1.18rem, 2vw, 1.45rem);
-  line-height: 1.2;
-}
-
-.legal-content p,
-.legal-content li {
-  color: var(--muted);
-}
-
-.legal-content ul {
-  margin: 0;
-  padding-left: 22px;
-}
-
-.legal-content a {
-  color: var(--gold-strong);
-  text-decoration: underline;
-  text-underline-offset: 3px;
-}
-
-.legal-note {
-  padding: 14px;
-  border: 1px solid var(--line);
-  border-radius: 6px;
-  background: rgba(230, 167, 43, 0.06);
-}
-
 .image-panel {
   min-height: 100%;
 }
