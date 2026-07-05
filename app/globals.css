@@ -399,6 +399,11 @@ h1 span,
   margin-bottom: 22px;
 }
 
+.section-heading p,
+.page-lead {
+  color: var(--muted);
+}
+
 .section-heading h2,
 .page-section > h1,
 .content-panel h1 {
@@ -453,8 +458,122 @@ h1 span,
   padding: clamp(24px, 4vw, 42px);
 }
 
+.content-panel h2 {
+  margin: 0 0 14px;
+  color: var(--text);
+  font-size: clamp(1.35rem, 2vw, 1.9rem);
+  line-height: 1.18;
+}
+
 .content-panel p {
   color: var(--muted);
+}
+
+.content-panel p + p,
+.content-panel p + ul,
+.content-panel p + ol {
+  margin-top: 12px;
+}
+
+.service-link-section {
+  padding: 34px 0 0;
+}
+
+.seo-content-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.service-page {
+  display: grid;
+  gap: 22px;
+}
+
+.service-hero {
+  max-width: 980px;
+}
+
+.service-hero h1 {
+  margin-bottom: 14px;
+  font-size: clamp(2.25rem, 5vw, 4rem);
+  line-height: 1.04;
+  text-transform: uppercase;
+}
+
+.breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.breadcrumb a,
+.internal-link-grid a {
+  color: var(--gold-strong);
+  text-decoration: none;
+}
+
+.ai-summary {
+  border-color: rgba(230, 167, 43, 0.45);
+  background: linear-gradient(135deg, rgba(230, 167, 43, 0.12), rgba(255, 255, 255, 0.025));
+}
+
+.internal-link-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.internal-link-grid a {
+  min-height: 48px;
+  display: flex;
+  align-items: center;
+  padding: 12px 14px;
+  border: 1px solid var(--line-soft);
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.035);
+  font-weight: 800;
+}
+
+.process-list,
+.check-list {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding-left: 22px;
+  color: var(--muted);
+}
+
+.accepted-grid {
+  display: grid;
+  gap: 10px;
+}
+
+.accepted-grid span {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--muted);
+}
+
+.accepted-grid svg {
+  color: var(--gold-strong);
+  flex: 0 0 auto;
+}
+
+.inline-faq {
+  margin-top: 0;
+}
+
+.related-faq-links {
+  margin-top: 22px;
+}
+
+.service-cta {
+  flex-wrap: wrap;
 }
 
 .image-panel {
@@ -1193,7 +1312,9 @@ dd {
 
   .hero-grid,
   .about-grid,
-  .contact-layout {
+  .contact-layout,
+  .seo-content-grid,
+  .internal-link-grid {
     grid-template-columns: 1fr;
   }
 
@@ -1260,6 +1381,10 @@ dd {
   .form-submit-row .gold-button,
   .message-form .gold-button {
     width: 100%;
+  }
+
+  .service-hero h1 {
+    font-size: clamp(2rem, 11vw, 3rem);
   }
 
   .feature-grid {

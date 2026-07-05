@@ -1,9 +1,10 @@
 import type { Settings } from "@/lib/types";
 
-export const siteName = "Autófelvásárlás";
-export const siteTitle = "Autófelvásárlás - használt autó felvásárlás gyorsan";
+export const primaryWebsiteUrl = "https://auto-felvasarlas-bp.hu";
+export const siteName = "Auto Felvásárlás BP";
+export const siteTitle = "Autófelvásárlás Budapest | Gyors ajánlat, azonnali fizetés";
 export const siteDescription =
-  "Használt autó felvásárlás országos lefedettséggel, korrekt ajánlattal és gyors ügyintézéssel.";
+  "Használt, sérült vagy hibás autó eladása Budapesten? Gyors ajánlat, korrekt ügyintézés, azonnali fizetés és országos kiszállás.";
 
 export const defaultSettings: Settings = {
   businessEmail: "autofelvasarlasb@gmail.com",
@@ -13,11 +14,11 @@ export const defaultSettings: Settings = {
   tiktokUrl: "https://www.tiktok.com/",
   instagramUrl: "https://instagram.com/",
   openingHours: "Hétfő - Vasárnap: 8:00 - 20:00",
-  serviceArea: "Ország egész területe"
+  serviceArea: "Budapest és ország egész területe"
 };
 
 export function getBaseUrl() {
-  return (process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000").replace(/\/$/, "");
+  return primaryWebsiteUrl;
 }
 
 export function absoluteUrl(path: string) {
@@ -31,6 +32,14 @@ export const navItems = [
   { href: "/gyik", label: "GYIK" }
 ];
 
+export const serviceLinks = [
+  { href: "/autofelvasarlas-budapest", label: "autófelvásárlás Budapesten" },
+  { href: "/hasznaltauto-felvasarlas", label: "használtautó felvásárlás" },
+  { href: "/serult-auto-felvasarlas", label: "sérült autó felvásárlása" },
+  { href: "/roncsauto-felvasarlas", label: "roncsautó felvásárlás" },
+  { href: "/keszpenzes-autofelvasarlas", label: "készpénzes autófelvásárlás" }
+];
+
 export const routes = [
   "/",
   "/rolunk",
@@ -38,5 +47,10 @@ export const routes = [
   "/gyik",
   "/ajanlatkeres",
   "/ajanlatkeres/koszonjuk",
-  "/uzenet-elkuldve"
+  "/uzenet-elkuldve",
+  "/autofelvasarlas-budapest",
+  "/hasznaltauto-felvasarlas",
+  "/serult-auto-felvasarlas",
+  "/roncsauto-felvasarlas",
+  "/keszpenzes-autofelvasarlas"
 ];

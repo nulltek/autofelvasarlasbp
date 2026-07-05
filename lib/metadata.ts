@@ -7,6 +7,13 @@ type PageMeta = {
   path: string;
 };
 
+const ogImage = {
+  url: absoluteUrl("/images/og-banner.jpg"),
+  width: 1200,
+  height: 630,
+  alt: "Autófelvásárlás Budapest banner autóval és elérhetőségekkel"
+};
+
 export function pageMetadata({ title, description = siteDescription, path }: PageMeta): Metadata {
   const url = absoluteUrl(path);
 
@@ -23,20 +30,13 @@ export function pageMetadata({ title, description = siteDescription, path }: Pag
       siteName,
       locale: "hu_HU",
       type: "website",
-      images: [
-        {
-          url: absoluteUrl("/images/og-banner.jpg"),
-          width: 1200,
-          height: 630,
-          alt: "Autófelvásárlás banner autóval és elérhetőségekkel"
-        }
-      ]
+      images: [ogImage]
     },
     twitter: {
       card: "summary_large_image",
       title,
       description,
-      images: [absoluteUrl("/images/og-banner.jpg")]
+      images: [ogImage.url]
     }
   };
 }

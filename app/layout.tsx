@@ -8,6 +8,13 @@ import "./globals.css";
 
 export const dynamic = "force-dynamic";
 
+const ogImage = {
+  url: absoluteUrl("/images/og-banner.jpg"),
+  width: 1200,
+  height: 630,
+  alt: "Autófelvásárlás Budapest banner autóval és elérhetőségekkel"
+};
+
 export const metadata: Metadata = {
   metadataBase: new URL(getBaseUrl()),
   title: {
@@ -25,16 +32,15 @@ export const metadata: Metadata = {
     siteName,
     locale: "hu_HU",
     type: "website",
-      images: [
-        {
-          url: absoluteUrl("/images/og-banner.jpg"),
-          width: 1200,
-          height: 630,
-          alt: "Autófelvásárlás banner autóval és elérhetőségekkel"
-        }
-      ]
-    }
-  };
+    images: [ogImage]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: siteTitle,
+    description: siteDescription,
+    images: [ogImage.url]
+  }
+};
 
 export default async function RootLayout({
   children
