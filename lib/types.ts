@@ -32,6 +32,7 @@ export type Inquiry = {
   sellerName: string;
   sellerEmail: string;
   sellerPhone: string;
+  carBrand?: string;
   carModel: string;
   carColor: string;
   carYear?: string;
@@ -39,6 +40,8 @@ export type Inquiry = {
   fuel?: string;
   transmission?: string;
   condition?: string;
+  location?: string;
+  askingPrice?: string;
   carData?: string;
   problems?: string;
   carPhotos: StoredFile[];

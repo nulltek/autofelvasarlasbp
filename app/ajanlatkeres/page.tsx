@@ -2,10 +2,10 @@ import { SellerForm } from "@/components/SellerForm";
 import { pageMetadata } from "@/lib/metadata";
 
 export const metadata = pageMetadata({
-  title: "Ajánlatkérés használt autó eladásához",
+  title: "Ajánlatkérés autó eladására | Gyors autófelvásárlási ajánlat",
   path: "/ajanlatkeres",
   description:
-    "Küldje el autója modelljét, színét, képeit és opcionális adatait. Rövid időn belül felvesszük a kapcsolatot."
+    "Küldje el autója márkáját, modelljét, évjáratát, futásteljesítményét, helyszínét, hibáit és képeit. Visszajelzünk autófelvásárlási ajánlattal."
 });
 
 export default function OfferPage() {
@@ -14,8 +14,8 @@ export default function OfferPage() {
       <p className="eyebrow">Ajánlatkérés</p>
       <h1>Küldje el autója adatait</h1>
       <p className="page-lead">
-        Töltse fel az autó modelljét, színét és képeit. Az adatok és a problémák leírása opcionális, de pontosabb
-        ajánlatot segít adni.
+        Adja meg az autó márkáját, modelljét, évjáratát, futásteljesítményét, helyszínét, ismert hibáit és képeit.
+        Ezek az adatok segítenek gyorsabb és pontosabb autófelvásárlási ajánlatot adni.
       </p>
       <SellerForm />
     </section>

@@ -25,12 +25,12 @@ export function SellerForm() {
       <section className="form-card">
         <h2>Autó adatai</h2>
         <label>
-          Modell
-          <input className={inputClass} name="carModel" required placeholder="Például Skoda Octavia" />
+          Márka
+          <input className={inputClass} name="carBrand" required placeholder="Például Toyota" />
         </label>
         <label>
-          Szín
-          <input className={inputClass} name="carColor" required placeholder="Például fekete" />
+          Modell
+          <input className={inputClass} name="carModel" required placeholder="Például Octavia, Astra, Corolla" />
         </label>
         <label>
           Évjárat
@@ -48,6 +48,7 @@ export function SellerForm() {
             <option>Dízel</option>
             <option>Hibrid</option>
             <option>Elektromos</option>
+            <option>Gáz</option>
             <option>Egyéb</option>
           </select>
         </label>
@@ -64,11 +65,25 @@ export function SellerForm() {
           <select className={inputClass} name="condition" defaultValue="">
             <option value="">Válasszon</option>
             <option>Megkímélt</option>
-            <option>Normál</option>
+            <option>Normál használt</option>
             <option>Hibás</option>
+            <option>Motorhibás</option>
             <option>Sérült</option>
+            <option>Nem indul</option>
             <option>Forgalomból kivont</option>
           </select>
+        </label>
+        <label>
+          Szín
+          <input className={inputClass} name="carColor" required placeholder="Például fekete" />
+        </label>
+        <label>
+          Autó helye
+          <input className={inputClass} name="location" required placeholder="Például Budapest XI. kerület" />
+        </label>
+        <label>
+          Irányár, ha van
+          <input className={inputClass} name="askingPrice" placeholder="Például 1 200 000 Ft" />
         </label>
       </section>
 
@@ -82,17 +97,22 @@ export function SellerForm() {
         </label>
         <label className="file-drop">
           <UploadCloud size={34} />
-          <strong>Modul / adat fájl feltöltése</strong>
+          <strong>Dokumentum vagy adatfájl feltöltése</strong>
           <span>Opcionális adatlap, PDF, TXT vagy kép.</span>
           <input name="dataFiles" type="file" multiple />
         </label>
         <label>
-          Autó adatok
-          <textarea className={inputClass} name="carData" rows={5} placeholder="További adatok, ha vannak." />
+          Ismert hibák
+          <textarea
+            className={inputClass}
+            name="problems"
+            rows={5}
+            placeholder="Motorhiba, váltóhiba, sérülés, lejárt műszaki vagy egyéb probléma."
+          />
         </label>
         <label>
-          Problémák leírása
-          <textarea className={inputClass} name="problems" rows={5} placeholder="Hibák, sérülések, problémák." />
+          További adatok
+          <textarea className={inputClass} name="carData" rows={5} placeholder="Felszereltség, szerviz, papírok, kulcsok." />
         </label>
       </section>
 

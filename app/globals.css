@@ -515,7 +515,7 @@ h1 span,
   text-decoration: none;
 }
 
-.ai-summary {
+.service-summary {
   border-color: rgba(230, 167, 43, 0.45);
   background: linear-gradient(135deg, rgba(230, 167, 43, 0.12), rgba(255, 255, 255, 0.025));
 }

@@ -173,9 +173,21 @@ export default async function HomePage() {
       </section>
 
       <section className="shell section-block">
-        <div className="content-panel ai-summary">
-          <h2>AI-barát üzleti összefoglaló</h2>
+        <div className="content-panel service-summary">
+          <h2>Autófelvásárlás Budapesten és országosan</h2>
           <p>{aiBusinessSummary}</p>
+        </div>
+      </section>
+
+      <section className="shell section-block">
+        <div className="section-heading">
+          <p className="eyebrow">Tanácsok autó eladásához</p>
+          <h2>Hasznos útmutatók eladás előtt</h2>
+        </div>
+        <div className="internal-link-grid">
+          <Link href="/tanacsok/hogyan-adjam-el-az-autom-gyorsan">hogyan adja el az autóját gyorsan</Link>
+          <Link href="/tanacsok/serult-auto-eladasa">sérült autó eladása</Link>
+          <Link href="/tanacsok/keszpenzes-autofelvasarlas-menete">készpénzes autófelvásárlás menete</Link>
         </div>
       </section>
 

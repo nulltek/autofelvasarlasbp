@@ -362,6 +362,144 @@ export const servicePages: ServicePage[] = [
       }
     ],
     related: ["/autofelvasarlas-budapest", "/hasznaltauto-felvasarlas", "/roncsauto-felvasarlas"]
+  },
+  {
+    slug: "autofelvasarlas-orszagosan",
+    path: "/autofelvasarlas-orszagosan",
+    title: "Autófelvásárlás országosan | Gyors ajánlat, azonnali fizetés",
+    description:
+      "Autófelvásárlás országosan használt, sérült, hibás vagy nem működő autókra. Kérjen ajánlatot képekkel és alapadatokkal.",
+    h1: "Autófelvásárlás országosan",
+    serviceName: "Autófelvásárlás országosan",
+    lead:
+      "Országos autófelvásárlási szolgáltatásunk azoknak szól, akik Budapest mellett vidéki városból, kisebb településről vagy nehezebben megközelíthető helyről szeretnének autót eladni. Használt, sérült, hibás, régi, nem induló és forgalomból kivont autóra is kérhető ajánlat.",
+    sections: [
+      {
+        title: "Használtautó felvásárlás országosan",
+        paragraphs: [
+          "Az autó helye nem mindig esik közel egy kereskedéshez vagy felvásárlóhoz. Ezért fontos, hogy az ajánlatkérés már az első lépésben tartalmazza a pontos várost vagy települést, az autó állapotát, mozgathatóságát és a rendelkezésre álló dokumentumokat.",
+          "Országos megkeresésnél a képek és az alapadatok különösen sokat számítanak. A márka, modell, évjárat, futásteljesítmény, üzemanyag, váltó, sérülések és helyszín alapján lehet előzetesen megítélni, hogy milyen ajánlat és átvételi feltétel reális."
+        ]
+      },
+      {
+        title: "Autófelvásárlás kedvező áron, reális értékeléssel",
+        paragraphs: [
+          "Kedvező ár alatt nem ellenőrizhetetlen ígéretet értünk, hanem olyan ajánlatot, amely figyelembe veszi az autó valós állapotát, piaci keresletét, dokumentumait és a szállítás körülményeit.",
+          "A cél az, hogy a tulajdonos gyorsan kapjon használható visszajelzést, és ne kelljen hetekig hirdetésekre, alkudozásra vagy bizonytalan vevőkre várnia."
+        ]
+      },
+      {
+        title: "Azonnali fizetés adásvételkor",
+        paragraphs: [
+          "Elfogadott ajánlat esetén a fizetés az adásvételkor történik. A fizetés módja előzetes egyeztetés kérdése: készpénz vagy megállapodás szerinti azonnali utalás is szóba jöhet.",
+          "A fizetés feltétele, hogy az autó állapota és dokumentumai megfeleljenek az előzetesen megadott információknak. Ezért fontos az őszinte hibaleírás és a pontos képek elküldése."
+        ]
+      },
+      {
+        title: "Országos átvétel és papírmunka",
+        paragraphs: [
+          "A helyszín, a hozzáférhetőség és az autó mozgathatósága meghatározza az átvétel módját. Nem működő vagy sérült autó esetén előre egyeztetni kell, hogy milyen szállításra van szükség.",
+          "Az adásvételhez általában forgalmi engedély, törzskönyv, kulcsok és személyes okmányok szükségesek. Ha valami hiányzik, azt már ajánlatkéréskor érdemes jelezni."
+        ]
+      }
+    ],
+    faqs: [
+      {
+        question: "Valóban országosan vállaltok autófelvásárlást?",
+        answer:
+          "Igen, Budapest mellett országos megkereséseket is fogadunk. A pontos helyszín és az autó állapota alapján egyeztetjük a lehetőségeket."
+      },
+      {
+        question: "Milyen adat kell országos ajánlatkéréshez?",
+        answer:
+          "Márka, modell, évjárat, futásteljesítmény, állapot, helyszín, képek, ismert hibák és elérhetőség szükséges a gyors értékeléshez."
+      },
+      {
+        question: "Nem működő autó országosan is elszállítható?",
+        answer:
+          "Egyeztetés alapján igen, de a helyszín, hozzáférhetőség és az autó mozgathatósága fontos feltétel."
+      },
+      {
+        question: "Mikor történik a fizetés?",
+        answer:
+          "Elfogadott ajánlat esetén a fizetés az adásvételkor történik, készpénzben vagy egyeztetés szerinti azonnali utalással."
+      },
+      {
+        question: "Sérült autóra is kérhetek országos ajánlatot?",
+        answer:
+          "Igen, sérült, hibás, motorhibás vagy forgalomból kivont autóra is kérhető ajánlat."
+      }
+    ],
+    related: ["/autofelvasarlas-budapest", "/hasznaltauto-felvasarlas", "/keszpenzes-autofelvasarlas"]
+  },
+  {
+    slug: "motorhibas-auto-felvasarlas",
+    path: "/motorhibas-auto-felvasarlas",
+    title: "Motorhibás autó felvásárlás | Nem induló és javításra szoruló autók",
+    description:
+      "Motorhibás autó felvásárlás Budapesten és országosan. Ajánlat nem induló, javításra szoruló vagy gazdaságosan nem javítható autókra.",
+    h1: "Motorhibás autó felvásárlás",
+    serviceName: "Motorhibás autó felvásárlás",
+    lead:
+      "A motorhiba sokszor olyan javítási költséget jelent, amely mellett a tulajdonos inkább eladná az autót. Motorhibás, nem induló, füstölő, kopogó motorú vagy javításra nem érdemes autóra is kérhető ajánlat Budapesten és országosan.",
+    sections: [
+      {
+        title: "Mikor érdemes motorhibás autót felvásárlónak eladni?",
+        paragraphs: [
+          "Ha a diagnosztika, bontás vagy javítás költsége bizonytalan, a magáneladás nehézkes lehet. A vevők tartanak a rejtett hibáktól, a szállítás problémás lehet, és a javítási kockázat miatt erős alkudozásra lehet számítani.",
+          "Felvásárlásnál az ismert hiba nem akadály, hanem értékelési szempont. Fontos megírni, hogy az autó indul-e, járóképes-e, milyen hibajelenség látható, volt-e diagnosztika, és mozgatható-e a jármű."
+        ]
+      },
+      {
+        title: "Nem induló és javításra szoruló autók",
+        paragraphs: [
+          "Ajánlat kérhető olyan autóra is, amely nem indul, túlmelegszik, motorhibát jelez, erősen füstöl, kopog, hengerfejes, vezérlés- vagy turbóproblémás, illetve gazdaságosan már nem javítható.",
+          "A pontos értékeléshez hasznosak a képek, a kilométeróra állása, a hibaleírás, a szerelői vélemény és az információ arról, hogy az autó mikor állt le vagy mióta nem használják."
+        ]
+      },
+      {
+        title: "Szállítás és átvétel motorhibás autónál",
+        paragraphs: [
+          "Motorhibás autó esetén gyakori, hogy az autó nem közlekedhet saját lábon. Ilyenkor előre egyeztetni kell a helyszínt, a hozzáférhetőséget és azt, hogy az autó gurítható-e.",
+          "Budapesten és országosan is fogadunk megkeresést. A szállítás lehetősége mindig az autó állapotától és a helyszíntől függ."
+        ]
+      },
+      {
+        title: "Fizetés és dokumentumok",
+        paragraphs: [
+          "Elfogadott ajánlat esetén a fizetés az adásvételkor történik. A tulajdonosnak érdemes előkészíteni a forgalmi engedélyt, törzskönyvet, kulcsokat és a szükséges személyes okmányokat.",
+          "Ha az autó forgalomból kivont, hiányos papírokkal rendelkezik vagy nem saját néven van, ezt már az ajánlatkérésben jelezni kell."
+        ]
+      }
+    ],
+    faqs: [
+      {
+        question: "Motorhibás autót is megvesztek?",
+        answer:
+          "Igen, motorhibás, nem induló vagy javításra szoruló autóra is lehet ajánlatot kérni."
+      },
+      {
+        question: "Mi számít motorhibának?",
+        answer:
+          "Ide tartozhat a nem induló motor, füstölés, kopogás, hengerfejhiba, turbóhiba, vezérlésprobléma vagy más komoly motorhiba."
+      },
+      {
+        question: "Kell szerelői diagnózis?",
+        answer:
+          "Nem kötelező, de ha van diagnózis vagy javítási ajánlat, segíthet pontosabb ajánlatot adni."
+      },
+      {
+        question: "El tudjátok szállítani a nem induló autót?",
+        answer:
+          "Egyeztetés alapján igen, ha a helyszín és a hozzáférhetőség ezt lehetővé teszi."
+      },
+      {
+        question: "Országosan is kérhető motorhibás autó felvásárlás?",
+        answer:
+          "Igen, Budapest mellett országos megkereséseket is fogadunk."
+      }
+    ],
+    related: ["/serult-auto-felvasarlas", "/roncsauto-felvasarlas", "/autofelvasarlas-orszagosan"]
   }
 ];
 

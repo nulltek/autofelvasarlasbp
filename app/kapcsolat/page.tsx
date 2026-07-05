@@ -5,10 +5,10 @@ import { mailHref, telHref } from "@/lib/format";
 import { pageMetadata } from "@/lib/metadata";
 
 export const metadata = pageMetadata({
-  title: "Kapcsolat - autófelvásárlás országosan",
+  title: "Kapcsolat | Autófelvásárlás Budapesten és országosan",
   path: "/kapcsolat",
   description:
-    "Lépjen kapcsolatba velünk telefonon, e-mailben, Facebookon, TikTokon vagy Instagramon. Országos autófelvásárlás."
+    "Lépjen kapcsolatba velünk telefonon, e-mailben, Facebookon, TikTokon vagy Instagramon. Autófelvásárlás Budapesten és országosan."
 });
 
 export default async function ContactPage() {
@@ -50,6 +50,19 @@ export default async function ContactPage() {
             </span>
           </p>
         </div>
+
+        <section className="content-panel contact-trust">
+          <h2>Ki végzi az autófelvásárlást?</h2>
+          <p>
+            Az Auto Felvásárlás BP használt, sérült, hibás, motorhibás, roncs és forgalomból kivont autók
+            felvásárlásával foglalkozik Budapesten és országosan.
+          </p>
+          <ul className="check-list">
+            <li>Ajánlat képek és strukturált autóadatok alapján.</li>
+            <li>Fizetés az adásvételkor, egyeztetés szerint készpénzben vagy azonnali utalással.</li>
+            <li>Segítség az átvétel, papírmunka és szükség esetén szállítás egyeztetésében.</li>
+          </ul>
+        </section>
 
         <ContactActions settings={settings} />
       </div>

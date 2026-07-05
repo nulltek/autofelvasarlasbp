@@ -137,7 +137,7 @@ export default async function AdminPage({ searchParams }: AdminPageProps) {
             <article key={inquiry.id} className="admin-card inquiry-card">
               <div className="admin-card-head">
                 <div>
-                  <h3>{inquiry.carModel}</h3>
+                  <h3>{[inquiry.carBrand, inquiry.carModel].filter(Boolean).join(" ")}</h3>
                   <p>{niceDate(inquiry.createdAt)}</p>
                 </div>
                 <div className="admin-card-actions">
@@ -184,8 +184,20 @@ export default async function AdminPage({ searchParams }: AdminPageProps) {
                   <dd>{inquiry.sellerEmail || "-"}</dd>
                 </div>
                 <div>
+                  <dt>Márka</dt>
+                  <dd>{inquiry.carBrand || "-"}</dd>
+                </div>
+                <div>
+                  <dt>Modell</dt>
+                  <dd>{inquiry.carModel}</dd>
+                </div>
+                <div>
                   <dt>Szín</dt>
                   <dd>{inquiry.carColor}</dd>
+                </div>
+                <div>
+                  <dt>Helyszín</dt>
+                  <dd>{inquiry.location || "-"}</dd>
                 </div>
                 <div>
                   <dt>Évjárat</dt>
@@ -202,6 +214,10 @@ export default async function AdminPage({ searchParams }: AdminPageProps) {
                 <div>
                   <dt>Váltó</dt>
                   <dd>{inquiry.transmission || "-"}</dd>
+                </div>
+                <div>
+                  <dt>Irányár</dt>
+                  <dd>{inquiry.askingPrice || "-"}</dd>
                 </div>
               </dl>
               {(inquiry.carData || inquiry.problems) && (

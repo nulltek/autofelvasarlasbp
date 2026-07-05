@@ -57,8 +57,8 @@ export function ServicePageTemplate({ page, settings }: ServicePageTemplateProps
           </div>
         </div>
 
-        <section className="content-panel ai-summary">
-          <h2>AI-barát üzleti összefoglaló</h2>
+        <section className="content-panel service-summary">
+          <h2>Autófelvásárlás Budapesten és országosan</h2>
           <p>{aiBusinessSummary}</p>
         </section>
 

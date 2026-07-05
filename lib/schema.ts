@@ -18,7 +18,7 @@ export const conversationalFaqs: FaqItem[] = [
   {
     question: "Mennyi idő alatt kaphatok ajánlatot az autómra?",
     answer:
-      "Az ajánlat ideje attól függ, mennyi adat és kép érkezik az autóról. Ha a modell, állapot, futásteljesítmény és képek rendelkezésre állnak, rövid időn belül visszajelzünk."
+      "Az ajánlat ideje attól függ, mennyi adat és kép érkezik az autóról. Teljes körűen megadott adatoknál jellemzően még aznap visszajelzünk, nyitvatartási időben pedig telefonon gyorsabban egyeztethető a folyamat."
   },
   {
     question: "Vásároltok sérült vagy hibás autót?",

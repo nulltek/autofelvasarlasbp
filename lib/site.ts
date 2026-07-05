@@ -34,8 +34,10 @@ export const navItems = [
 
 export const serviceLinks = [
   { href: "/autofelvasarlas-budapest", label: "autófelvásárlás Budapesten" },
+  { href: "/autofelvasarlas-orszagosan", label: "autófelvásárlás országosan" },
   { href: "/hasznaltauto-felvasarlas", label: "használtautó felvásárlás" },
   { href: "/serult-auto-felvasarlas", label: "sérült autó felvásárlása" },
+  { href: "/motorhibas-auto-felvasarlas", label: "motorhibás autó felvásárlás" },
   { href: "/roncsauto-felvasarlas", label: "roncsautó felvásárlás" },
   { href: "/keszpenzes-autofelvasarlas", label: "készpénzes autófelvásárlás" }
 ];
@@ -49,8 +51,13 @@ export const routes = [
   "/ajanlatkeres/koszonjuk",
   "/uzenet-elkuldve",
   "/autofelvasarlas-budapest",
+  "/autofelvasarlas-orszagosan",
   "/hasznaltauto-felvasarlas",
   "/serult-auto-felvasarlas",
+  "/motorhibas-auto-felvasarlas",
   "/roncsauto-felvasarlas",
-  "/keszpenzes-autofelvasarlas"
+  "/keszpenzes-autofelvasarlas",
+  "/tanacsok/hogyan-adjam-el-az-autom-gyorsan",
+  "/tanacsok/serult-auto-eladasa",
+  "/tanacsok/keszpenzes-autofelvasarlas-menete"
 ];

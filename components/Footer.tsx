@@ -1,8 +1,8 @@
-﻿import Link from "next/link";
+import Link from "next/link";
 import { Mail, Phone } from "lucide-react";
 import type { Settings } from "@/lib/types";
 import { mailHref, telHref } from "@/lib/format";
-import { navItems } from "@/lib/site";
+import { navItems, serviceLinks } from "@/lib/site";
 import { Logo } from "@/components/Logo";
 
 type FooterProps = {
@@ -15,17 +15,21 @@ export function Footer({ settings }: FooterProps) {
       <div className="shell footer-grid">
         <div>
           <Logo />
-          <p>
-            HasznĂˇlt autĂł felvĂˇsĂˇrlĂˇs gyors ĂĽgyintĂ©zĂ©ssel, orszĂˇgos lefedettsĂ©ggel Ă©s korrekt ajĂˇnlattal.
-          </p>
+          <p>Használt autó felvásárlás gyors ügyintézéssel, budapesti és országos lefedettséggel, korrekt ajánlattal.</p>
         </div>
-        <nav aria-label="LĂˇblĂ©c navigĂˇciĂł">
+        <nav aria-label="Lábléc navigáció">
           {navItems.map((item) => (
             <Link key={item.href} href={item.href}>
               {item.label}
             </Link>
           ))}
-          <Link href="/ajanlatkeres">AjĂˇnlatkĂ©rĂ©s</Link>
+          <Link href="/ajanlatkeres">Ajánlatkérés</Link>
+          <Link href="/autofelvasarlas-orszagosan">Országos autófelvásárlás</Link>
+          {serviceLinks.slice(0, 4).map((item) => (
+            <Link key={item.href} href={item.href}>
+              {item.label}
+            </Link>
+          ))}
         </nav>
         <div className="footer-contact">
           <a href={telHref(settings.phone)}>
